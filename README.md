@@ -1,6 +1,6 @@
 # InfyniDock Homebrew Tap
 
-Homebrew tap for [InfyniDock](https://www.infyniclick.com/) — a window-level Dock for macOS with live window previews, Option-Tab switching, and workspaces.
+Homebrew tap for [InfyniDock](https://www.infyniclick.com/) - a window-level Dock for macOS with live window previews, Option-Tab switching, and workspaces.
 
 ## Install
 
@@ -8,7 +8,7 @@ Homebrew tap for [InfyniDock](https://www.infyniclick.com/) — a window-level D
 brew install --cask yeelone/tap/infynidock
 ```
 
-Homebrew taps this repo automatically — no separate `brew tap` step needed.
+Homebrew taps this repo automatically, with no separate `brew tap` step needed.
 
 ## Upgrade / Uninstall
 
@@ -25,13 +25,13 @@ brew uninstall --zap --cask infynidock   # also removes preferences, logs and ca
 
 ---
 
-## 发版维护（给作者）
+## Maintaining
 
-cask 的下载源是 GitHub Releases 上带版本号的 dmg。每发一个新版：
+The cask downloads a versioned DMG from GitHub Releases. For each new release:
 
-1. 确认 dmg 已上传到 GitHub Releases：`InfyniDock-Installer-<version>.dmg`
-2. 算 sha256：`shasum -a 256 InfyniDock-Installer-<version>.dmg`
-3. 改 `Casks/infynidock.rb` 顶部的 `version` 和 `sha256` 两行
+1. Make sure the DMG is uploaded to GitHub Releases as `InfyniDock-Installer-<version>.dmg`
+2. Compute its checksum: `shasum -a 256 InfyniDock-Installer-<version>.dmg`
+3. Update the `version` and `sha256` lines at the top of `Casks/infynidock.rb`
 4. `git commit && git push`
 
-查 GitHub 上的最新版本号：`brew livecheck --cask yeelone/tap/infynidock`
+Check the latest published version with `brew livecheck --cask yeelone/tap/infynidock`.
