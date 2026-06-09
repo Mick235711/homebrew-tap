@@ -17,7 +17,7 @@ cask "infynidock" do
   # InfyniDock ships its own Sparkle-based updater, so Homebrew should not
   # manage upgrades.
   auto_updates true
-  depends_on macos: ">= :ventura"
+  depends_on macos: :ventura
 
   # NOTE: the bundle inside the DMG is "InfyniDock.app" (capital I),
   # which differs from the Sparkle zip's "infyniDock.app".
