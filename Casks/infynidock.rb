@@ -2,8 +2,7 @@ cask "infynidock" do
   version "2.14.8"
   sha256 "57f1be0777e700188b2d7b74246b051a1a691c8f86091ba40c2ed41a817b68d8"
 
-  url "https://github.com/yeelone/InfyniDock/releases/download/#{version}/InfyniDock-Installer-#{version}.dmg",
-      verified: "github.com/yeelone/InfyniDock/"
+  url "https://github.com/yeelone/InfyniDock/releases/download/#{version}/InfyniDock-Installer-#{version}.dmg"
   name "InfyniDock"
   desc "Window-level dock with live previews, Option-Tab and workspaces"
   homepage "https://www.infyniclick.com/"
